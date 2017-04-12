@@ -97,5 +97,10 @@ module ApiAiRuby
       ApiAiRuby::ContextsRequest.new(self)
     end
 
+    # @return [ApiAiRuby::IntentRequest]
+    def create_intents_request
+      ApiAiRuby::IntentRequest.new(self);
+    end
+
   end
 end
